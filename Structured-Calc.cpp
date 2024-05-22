@@ -1,6 +1,6 @@
 // To do:
 //  Implement a menu
-//  Exceptions
+//  Exceptions when divide by 0
 //  Integrate two functions of the Math Library
 
 #include <iostream>
