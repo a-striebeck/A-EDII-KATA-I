@@ -1,3 +1,7 @@
+# To do:
+#  Implement a menu
+#  Exceptions when divide by 0
+
 def Addition(numA, numB):
     return numA + numB
 
