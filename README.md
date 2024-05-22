@@ -8,13 +8,14 @@ The intent behind code kata is similar. Each is a short exercise (perhaps 30 min
 
 ### Stage I
 
-- Development of a *Calculator on C++ under the Structured Paradigm.
-- Development of a *Calculador on C++ under Object Oriented Paradigm.
+- 20' to develop a Calculator on C++ under the Structured Paradigm.
+- 20' to develop a Calculator on Python using Structured paradigm.
 - Implementations analysis.
 
 ### Stage II
 
-- Development of a Calculator on Python using Structured paradigm.
+- Development of a Calculador on C++ under Object Oriented Paradigm.
+- Development of a Calculador on Python under Object Oriented Paradigm.
 
-**This is part of the course Algorithms and Data Structure of the Systems Analyst career on the ISFT N°151.**
+**This is part of the course Algorithms and Data Structure II of the Systems Analyst career on the ISFT N°151.**
 
