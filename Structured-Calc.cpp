@@ -1,7 +1,5 @@
 // To do:
-//  Implement a menu
-//  Exceptions when divide by 0
-//  Integrate two functions of the Math Library
+//  Remove the if on the division, and change it for exceptions
 
 #include <iostream>
 #include <cmath>
