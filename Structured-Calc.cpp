@@ -1,5 +1,7 @@
 // To do:
 //  Remove the if on the division, and change it for exceptions
+//  PrintMenu()
+//  AskNumbers()
 
 #include <iostream>
 #include <cmath>
@@ -36,6 +38,7 @@ void menu(){
         std::cout << "2---- Resta" << std::endl;
         std::cout << "3---- Division" << std::endl;
         std::cout << "4---- Multiplicacion" << std::endl;
+        std::cout << "5---- Salir" << std::endl;
 
         std::cin >> choice;
         if (choice == '5')
