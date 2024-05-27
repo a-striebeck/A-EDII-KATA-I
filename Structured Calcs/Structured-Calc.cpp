@@ -43,6 +43,7 @@ void Menu()
     do{ 
         PrintMenu();
         std::cin >> choice;
+        
         if (choice == '5')
         {
             break;
@@ -83,7 +84,7 @@ float Multiplication (float valueA, float valueB){
     return result;
 }
 
-void printResults(char choice, StructuredCalc calculator)
+void PrintResults(char choice, StructuredCalc calculator)
 {    
     switch (choice){
         case '1':
