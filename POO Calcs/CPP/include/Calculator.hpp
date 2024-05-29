@@ -10,7 +10,7 @@ private:
     float ValueB;
     float Result;
 public:
-    Calculator(/* args */);
+    Calculator();
     ~Calculator();
     void Addition ();
     void Withdraw ();
