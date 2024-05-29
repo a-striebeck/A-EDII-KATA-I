@@ -1,10 +1,12 @@
 #include "Calculator.hpp"
+#ifndef MENU_HPP
+#define MENU_HPP
 
 class Menu
 {
 private:
 
-    int Option = 0;
+    char Option = 0;
     Calculator *tCalculator;
     
 
@@ -15,13 +17,9 @@ public:
     void AskOperation();
     void PrintMenu();
     void PrintResults();
+    void SetOption(char tOption);
+    char GetOption();
+    void ProcessOperation();
 };
 
-Menu::Menu(Calculator &tCalc)
-{
-    tCalculator = &tCalc;
-}
-
-Menu::~Menu()
-{
-}
+#endif

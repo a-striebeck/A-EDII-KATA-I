@@ -6,7 +6,8 @@ int main()
 {
     Calculator *calc = new Calculator();
     Menu *menu = new Menu(*calc);
-    calc->~Calculator();
-    menu->~Menu();
+    menu->ProcessOperation();
+    delete calc;
+    delete menu;
     return 0;
 }

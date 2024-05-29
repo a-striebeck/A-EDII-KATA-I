@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#ifndef CALCULATOR_HPP
+#define CALCULATOR_HPP
 
 class Calculator
 {
@@ -11,7 +13,7 @@ public:
     Calculator(/* args */);
     ~Calculator();
     void Addition ();
-    void Witdhraw ();
+    void Withdraw ();
     void Division ();
     void Multiplication ();
     void SetValueA(float value);
@@ -24,49 +26,4 @@ public:
 
 };
 
-
-
-Calculator::Calculator(/* args */)
-{
-}
-
-Calculator::~Calculator()
-{
-}
-
-void Calculator::Addition (){
-    float Result = ValueA + ValueB;
-}
-
-void Calculator::Witdhraw (){
-    float result = ValueA - ValueB;
-}
-void Calculator::Division (){
-    if (ValueB == 0)
-    {
-        Result = NAN;
-    }else{
-        float Result = ValueA / ValueB;
-    }
-}
-void Calculator::Multiplication (){
-    Result = ValueA * ValueB;
-}
-
-void Calculator::SetValueA(float value){
-    ValueA = value;
-}
-void Calculator::SetValueB(float value){
-    ValueB = value;
-}
-float Calculator::GetValueA(){
-    return ValueA;
-}
-
-float Calculator::GetValueB(){
-    return ValueB;
-}
-
-float Calculator::GetResult(){
-    return Result;
-}
+#endif 
