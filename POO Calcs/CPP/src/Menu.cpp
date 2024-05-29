@@ -83,6 +83,8 @@ void Menu::ProcessOperation(){
 
             case '*':
                 tCalculator->Multiplication();
+                break;
+
             default:
             break;
         }
