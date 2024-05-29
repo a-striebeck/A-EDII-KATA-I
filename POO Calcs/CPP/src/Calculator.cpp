@@ -1,6 +1,6 @@
 #include "../include/Calculator.hpp"
 
-Calculator::Calculator(/* args */) : ValueA(0), ValueB(0), Result(0) 
+Calculator::Calculator() : ValueA(0), ValueB(0), Result(0) 
 {
 }
 
