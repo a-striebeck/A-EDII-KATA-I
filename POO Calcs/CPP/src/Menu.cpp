@@ -52,7 +52,11 @@ void Menu::SelectOperation(){
 
 void Menu::PrintResults(){    
 
-    std::cout<< tCalculator->GetValueA() << " " << Option << " " << tCalculator->GetValueB() << " = " << tCalculator->GetResult() << std::endl;
+    if (std::isnan(tCalculator->GetResult())) {
+        std::cout << "Error: No se puede dividir por cero.\n";
+    } else {
+        std::cout << tCalculator->GetValueA() << " " << Option << " " << tCalculator->GetValueB() << " = " << tCalculator->GetResult() << std::endl;
+    }
 
 }
 
@@ -69,11 +73,7 @@ void Menu::ProcessOperation(){
         break;
 
         case '/':
-            if (tCalculator->GetValueB() == 0){
-                std::cout << "Error: No se puede dividir por cero.";
-            }else{
-                tCalculator->Division();
-            }
+            tCalculator->Division();
             break;
 
         case '*':
