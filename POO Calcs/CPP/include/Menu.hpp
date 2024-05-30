@@ -8,17 +8,18 @@ private:
 
     char Option = 0;
     Calculator *tCalculator;
-    
+
+    bool IsValidOption(char option) const;
 
 public:
     Menu(Calculator &tCalc);
     ~Menu();
     void AskNumbers();
     void SelectOperation();
-    void PrintMenu();
-    void PrintResults();
+    void PrintMenu() const;
+    void PrintResults() const;
     void SetOption(char tOption);
-    char GetOption();
+    char GetOption() const;
     void ProcessOperation();
     void RunMenu();
 };

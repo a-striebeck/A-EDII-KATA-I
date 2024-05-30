@@ -9,11 +9,15 @@ Menu::~Menu()
 {
 }
 
+bool Menu::IsValidOption(char option) const {
+    return option == '+' || option == '-' || option == '/' || option == '*' || option == 'S';
+}
+
 void Menu::SetOption(char tOption){
     Option = tOption;
 }
 
-char Menu::GetOption(){
+char Menu::GetOption() const{
     return Option;
 }
 
@@ -29,7 +33,7 @@ void Menu::AskNumbers(){
 
 }
 
-void Menu::PrintMenu(){
+void Menu::PrintMenu() const{
 
     std::cout << "\n Calculadora Objetos" << std::endl;   
     std::cout << "+ \t Suma" << std::endl;
@@ -40,17 +44,19 @@ void Menu::PrintMenu(){
 
 }
 
+
+
 void Menu::SelectOperation(){
 
     std::cout << "Ingrese la operacion (+, -, *, /): ";
     std::cin >> Option;
-    if (Option != '+' && Option != '-' && Option != '/' && Option != '*' && Option != 'S'){
+    if (!IsValidOption(Option)){
         std::cout << "Opcion invalida.";
     }
 
 }
 
-void Menu::PrintResults(){    
+void Menu::PrintResults() const{    
 
     if (std::isnan(tCalculator->GetResult())) {
         std::cout << "Error: No se puede dividir por cero.\n";
@@ -88,7 +94,7 @@ void Menu::ProcessOperation(){
 void Menu::RunMenu(){
     PrintMenu();
     SelectOperation();
-    if (Option == '+' || Option == '-' || Option == '/' || Option == '*')
+    if (IsValidOption(Option) && Option != 'S')
     {
         AskNumbers();
         ProcessOperation();

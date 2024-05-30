@@ -33,14 +33,14 @@ void Calculator::SetValueA(float value){
 void Calculator::SetValueB(float value){
     ValueB = value;
 }
-float Calculator::GetValueA(){
+float Calculator::GetValueA() const{
     return ValueA;
 }
 
-float Calculator::GetValueB(){
+float Calculator::GetValueB() const{
     return ValueB;
 }
 
-float Calculator::GetResult(){
+float Calculator::GetResult() const{
     return Result;
 }

@@ -18,9 +18,9 @@ public:
     void Multiplication ();
     void SetValueA(float value);
     void SetValueB(float value);
-    float GetValueA();
-    float GetValueB();
-    float GetResult();
+    float GetValueA() const;
+    float GetValueB() const;
+    float GetResult() const;
 
 
 
