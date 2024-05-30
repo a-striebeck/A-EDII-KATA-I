@@ -6,7 +6,11 @@ int main()
 {
     Calculator *calc = new Calculator();
     Menu *menu = new Menu(*calc);
-    menu->ProcessOperation();
+    do
+    {
+        menu->RunMenu();
+    } while (menu->GetOption() != 'S');
+    
     delete calc;
     delete menu;
     return 0;

@@ -40,7 +40,7 @@ void Menu::PrintMenu(){
 
 }
 
-void Menu::AskOperation(){
+void Menu::SelectOperation(){
 
     std::cout << "Ingrese la operacion (+, -, *, /): ";
     std::cin >> Option;
@@ -58,36 +58,41 @@ void Menu::PrintResults(){
 
 void Menu::ProcessOperation(){
 
-    PrintMenu();
-    AskOperation();
-    if (Option == '+' || Option == '-' || Option == '/' || Option == '*')
-    {   
-        AskNumbers();
-        switch (Option)
-        {
-            case '+':
-                tCalculator->Addition();
+    switch (Option)
+    {
+        case '+':
+            tCalculator->Addition();
+        break;
+
+        case '-':
+            tCalculator->Withdraw();
+        break;
+
+        case '/':
+            if (tCalculator->GetValueB() == 0){
+                std::cout << "Error: No se puede dividir por cero.";
+            }else{
+                tCalculator->Division();
+            }
             break;
 
-            case '-':
-                tCalculator->Withdraw();
+        case '*':
+            tCalculator->Multiplication();
             break;
 
-            case '/':
-                if (tCalculator->GetValueB() == 0){
-                    std::cout << "Error: No se puede dividir por cero.";
-                }else{
-                    tCalculator->Division();
-                }
-                break;
-
-            case '*':
-                tCalculator->Multiplication();
-                break;
-
-            default:
-            break;
+        default:
+        break;
         }
-    PrintResults();
+}
+
+void Menu::RunMenu(){
+    PrintMenu();
+    SelectOperation();
+    if (Option == '+' || Option == '-' || Option == '/' || Option == '*')
+    {
+        AskNumbers();
+        ProcessOperation();
+        PrintResults();
     }
+    
 }

@@ -14,12 +14,13 @@ public:
     Menu(Calculator &tCalc);
     ~Menu();
     void AskNumbers();
-    void AskOperation();
+    void SelectOperation();
     void PrintMenu();
     void PrintResults();
     void SetOption(char tOption);
     char GetOption();
     void ProcessOperation();
+    void RunMenu();
 };
 
 #endif
