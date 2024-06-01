@@ -9,11 +9,10 @@ private:
     char Option = 0;
     Calculator *tCalculator;
 
-    bool IsValidOption(char option) const;
-
 public:
     Menu(Calculator &tCalc);
     ~Menu();
+    bool IsValidOption(char option) const;
     void AskNumbers();
     void SelectOperation();
     void PrintMenu() const;

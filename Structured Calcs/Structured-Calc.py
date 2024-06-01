@@ -8,7 +8,7 @@ def Withdraw(numA, numB):
 
 def Division(numA, numB):
     if numB == 0:
-        return "Error: no se puede dividir por cero"
+        return divisionError
     else:
         return numA / numB
 

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/agust/OneDrive/Escritorio/ISFT 151/Algoritmos y Estructura de Datos/Segundo/Kata I/A-EDII-KATA-I",
-      "program": "c:/Users/agust/OneDrive/Escritorio/ISFT 151/Algoritmos y Estructura de Datos/Segundo/Kata I/A-EDII-KATA-I/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
