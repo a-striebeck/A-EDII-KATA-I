@@ -11,7 +11,6 @@ int main()
     {
         menu->PrintMenu();
         menu->SelectOperation();
-        menu->GetOption();
         if (menu->IsValidOption(menu->GetOption()) && menu->GetOption() != 'S')
         {
             menu->AskNumbers();
