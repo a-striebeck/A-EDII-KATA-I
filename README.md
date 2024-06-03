@@ -14,8 +14,8 @@ The intent behind code kata is similar. Each is a short exercise (perhaps 30 min
 
 ### Stage II
 
-- Development of a Calculador on C++ under Object Oriented Paradigm.
-- Development of a Calculador on Python under Object Oriented Paradigm.
+- Development of a Calculator on C++ under Object Oriented Paradigm.
+- Development of a Calculator on Python under Object Oriented Paradigm.
 
 **This is part of the course Algorithms and Data Structure II of the Systems Analyst career on the ISFT N°151.**
 
