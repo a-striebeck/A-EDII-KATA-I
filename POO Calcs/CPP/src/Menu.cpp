@@ -75,7 +75,7 @@ void Menu::ProcessOperation(){
         break;
 
         case '-':
-            tCalculator->Withdraw();
+            tCalculator->Subtraction();
         break;
 
         case '/':

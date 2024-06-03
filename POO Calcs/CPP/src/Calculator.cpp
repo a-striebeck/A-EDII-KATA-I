@@ -12,7 +12,7 @@ void Calculator::Addition (){
     Result = ValueA + ValueB;
 }
 
-void Calculator::Withdraw (){
+void Calculator::Subtraction (){
     Result = ValueA - ValueB;
 }
 void Calculator::Division (){
