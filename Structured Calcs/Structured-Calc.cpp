@@ -17,7 +17,7 @@ float Substraction (float valueA, float ValueB);
 float Division (float valueA, float ValueB);
 float Multiplication (float valueA, float ValueB);
 void PrintMenu();
-float AddNumber(std::string pos);
+void AskValues(StructuredCalc &calculator);
 void ProcessOperation(char choice, StructuredCalc &calculator);
 void PrintResults(char choice, StructuredCalc &calculator);
 bool IsValidOption(char option);
@@ -63,11 +63,11 @@ void PrintMenu()
     std::cout << "\"S\" \t Salir" << std::endl;
 }
 
-float AddNumber(std::string pos){
-    float number;
-    std::cout << "Ingrese el "<< pos <<" numero: ";
-    std::cin >> number;
-    return number;
+void AskValues(StructuredCalc &calculator){
+    std::cout << "Ingrese el primer numero: ";
+    std::cin >> calculator.num1;
+    std::cout << "Ingrese el segundo numero: ";
+    std::cin >> calculator.num2;
 }
 
 void ProcessOperation(char choice, StructuredCalc &calculator){
@@ -120,8 +120,7 @@ void Menu()
         }
         if (IsValidOption(choice))
         {
-            calculator.num1 = AddNumber("primer");
-            calculator.num2 = AddNumber("segundo");
+            AskValues(calculator);
             ProcessOperation(choice, calculator);
             PrintResults(choice, calculator);    
         }else{
