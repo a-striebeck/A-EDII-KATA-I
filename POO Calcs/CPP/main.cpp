@@ -9,10 +9,18 @@ int main()
     
     do
     {
-        menu->RunMenu();
-    } while (menu->GetOption() != 'S');
+        menu->PrintMenu();
+        menu->SelectOperation();
+        menu->GetOption();
+        if (menu->IsValidOption(menu->GetOption()) && menu->GetOption() != 'S')
+        {
+            menu->AskNumbers();
+            menu->ProcessOperation();
+            menu->PrintResults();
+    }} while (menu->GetOption() != 'S');
 
     delete calc;
     delete menu;
     return 0;
 }
+

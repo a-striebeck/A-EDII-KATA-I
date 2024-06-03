@@ -20,7 +20,6 @@ public:
     void SetOption(char tOption);
     char GetOption() const;
     void ProcessOperation();
-    void RunMenu();
 };
 
 #endif

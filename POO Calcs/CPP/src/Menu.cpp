@@ -90,15 +90,3 @@ void Menu::ProcessOperation(){
         break;
         }
 }
-
-void Menu::RunMenu(){
-    PrintMenu();
-    SelectOperation();
-    if (IsValidOption(Option) && Option != 'S')
-    {
-        AskNumbers();
-        ProcessOperation();
-        PrintResults();
-    }
-    
-}
