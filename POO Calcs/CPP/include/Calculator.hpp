@@ -13,7 +13,7 @@ public:
     Calculator();
     ~Calculator();
     void Addition ();
-    void Subtraction ();
+    void Substraction ();
     void Division ();
     void Multiplication ();
     void SetValueA(float value);

@@ -13,7 +13,7 @@ struct StructuredCalc
 
 
 float Addition (float valueA, float ValueB);
-float Subtraction (float valueA, float ValueB);
+float Substraction (float valueA, float ValueB);
 float Division (float valueA, float ValueB);
 float Multiplication (float valueA, float ValueB);
 void PrintMenu();
@@ -35,7 +35,7 @@ float Addition (float valueA, float valueB){
     return result;
 }
 
-float Subtraction (float valueA, float valueB){
+float Substraction (float valueA, float valueB){
     float result = valueA - valueB;
     return result;
 }
@@ -77,7 +77,7 @@ void ProcessOperation(char choice, StructuredCalc &calculator){
             calculator.result = Addition(calculator.num1, calculator.num2);
             break;
         case '-':
-            calculator.result = Subtraction(calculator.num1, calculator.num2);
+            calculator.result = Substraction(calculator.num1, calculator.num2);
             break;
         case '/':
             calculator.result = Division(calculator.num1, calculator.num2);
